@@ -43,6 +43,9 @@
     <Compile Include="Views\CatsPage.xaml.cs">
       <DependentUpon>CatsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DetailsPage.xaml.cs">
+      <DependentUpon>DetailsPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -78,7 +81,12 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CatsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
